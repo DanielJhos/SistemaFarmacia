@@ -1,0 +1,12 @@
+unit uServicoFarmaceutico;
+
+interface
+
+type
+  TServicoFarmaceutico = class
+
+  end;
+
+implementation
+
+end.

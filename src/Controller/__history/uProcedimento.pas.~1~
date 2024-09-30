@@ -1,0 +1,22 @@
+unit uProcedimento;
+
+interface
+
+type
+  TTipoProcedimento = (
+    tpAtencaoFarmaceuticaDomiciliar,
+    tpAfericaoPressaoArterial,
+    tpAfericaoTemperaturaCorporal,
+    tpAfericaoGlicemiaCapilar,
+    tpAdministracaoMedicamentosInalacao,
+    tpAdministracaoMedicamentosAplicacaoInjetaveis
+  );
+
+
+  TProcedimento = class
+    FTipo:
+  end;
+
+implementation
+
+end.

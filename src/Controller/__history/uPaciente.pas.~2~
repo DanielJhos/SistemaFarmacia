@@ -1,0 +1,15 @@
+unit uPaciente;
+
+interface
+
+type
+  TPaciente = class
+  private
+    FID: Integer;
+    FNome: String;
+    FDatNascimento: TDate;
+  end;
+
+implementation
+
+end.

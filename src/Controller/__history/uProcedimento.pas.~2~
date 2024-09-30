@@ -1,0 +1,29 @@
+unit uProcedimento;
+
+interface
+
+type
+  TTipoProcedimento = (
+    tpAtencaoFarmaceuticaDomiciliar,
+    tpAfericaoPressaoArterial,
+    tpAfericaoTemperaturaCorporal,
+    tpAfericaoGlicemiaCapilar,
+    tpAdministracaoMedicamentosInalacao,
+    tpAdministracaoMedicamentosAplicacaoInjetaveis
+  );
+
+
+  TProcedimento = class
+  private
+    FTipo: TTipoProcedimento;
+    FDescricao: String;
+    FValorUnitario: Double;
+  public
+    property Tipo: TTipoProcedimentoTipoProcedimento read FTipo write FTipo;
+    property Descricao: String read FDescricao write FDescricao;
+    property ValorUnitario: Double read FValorUnitario write FValorUnitario;
+  end;
+
+implementation
+
+end.

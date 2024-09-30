@@ -1,0 +1,25 @@
+unit uServicoFarmaceutico;
+
+interface
+
+type
+  TServicoFarmaceutico = class
+  private
+    FID: Integer;
+    FDataServico: TDate;
+    FObservacao: String;
+    FValorTotal: Double;
+    FIDFarmaceutico: Integer;
+    FIDPaciente: Integer;
+  public
+    property ID: Integer read FID write FID;
+    property DataServico: TDate read FDataServico write FDataServico;
+    property Observacao: String read FObservacao write FObservacao;
+    property ValorTotal: Double read FValorTotal write FValorTotal;
+    property IDFarmaceutico: Integer read FIDFarmaceutico write FIDFarmaceutico;
+    property IDPaciente: Integer read FIDPaciente write FIDPaciente;
+  end;
+
+implementation
+
+end.

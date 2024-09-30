@@ -1,0 +1,33 @@
+CREATE DATABASE sistema_farmaceutico;
+
+USE sistema_farmaceutico; 
+
+CREATE TABLE paciente (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    data_nascimento DATE
+);
+
+CREATE TABLE farmaceutico (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    crf VARCHAR(50),
+    data_registro DATE
+);
+
+CREATE TABLE procedimento (
+    tipo INT PRIMARY KEY,
+    descricao VARCHAR(255),
+    valor DECIMAL(10, 2)
+);
+
+CREATE TABLE servico_farmaceutico (
+    id INT PRIMARY KEY,
+    data_servico DATE,
+    observacao TEXT,
+    valor_total DECIMAL(10, 2),
+    id_farmaceutico INT,
+    id_paciente INT,
+    FOREIGN KEY (id_farmaceutico) REFERENCES farmaceutico(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_paciente) REFERENCES paciente(id) ON DELETE CASCADE
+);

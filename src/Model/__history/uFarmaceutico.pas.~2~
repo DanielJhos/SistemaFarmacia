@@ -1,0 +1,30 @@
+unit uFarmaceutico;
+
+interface
+
+type
+  TFarmaceutico = class
+  private
+    FID: Integer;
+    FNome: String;
+    FCRMF: String;
+    FDataRegistro: TDate;
+  public
+    property ID: Integer read FID write FID;
+    property Nome: String read FNome write FNome;
+    property CRMF: String read FCRMF write FCRMF;
+    property DataRegistro: TDate read FDataRegistro write FDataRegistro;
+
+    procedure LimparCampos;
+  end;
+
+implementation
+
+{ TFarmaceutico }
+
+procedure TFarmaceutico.LimparCampos;
+begin
+
+end;
+
+end.
